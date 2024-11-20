@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+
 import './App.css';
+// import StepMessage from './StepMessage';
+import Steps from './Steps';
 
 function App() {
+  const messages = [
+    "Learn React ⚛️",
+    "Apply for jobs 😔 ",
+    "Invest your new income 💰",
+    "Keep learning and growing ���"
+  ];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Steps messages={messages}/>
+      {/* <StepMessage >
+      <p>Pass in content</p>
+      <p>✌️</p>
+      </StepMessage >
+      <StepMessage >
+      <p>Read children prop</p>
+      <p>😎</p>
+      </StepMessage > */}
+
     </div>
   );
 }
